@@ -1,0 +1,1143 @@
+@media screen and (min-width: 1366px) {
+	.modal-pos {
+		font-size: 100%;
+		background: rgba(0, 0, 0, .7);
+		
+		.modal-xxl {
+			max-width: 1366px;
+			margin: 4% auto;
+			
+			.modal-content {
+				border: 0;
+				border-radius: 0;
+				box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+				
+				.modal-header {
+					border-radius: 0;
+					padding: 1.5%;
+					background: $main-hover;
+					color: $white-color;
+					
+					.modal-title {
+						font-size: 130%;
+						
+						span {
+							padding-right: 1rem;
+						}
+					}
+					
+					button {
+						opacity: 1;
+						box-shadow: none !important;
+						outline: none !important;
+						text-shadow: none;
+						color: $white-color;
+					}
+				}
+				
+				.modal-body {
+					table.table {
+						font-size: 110%;
+						
+						.choose-customer {
+							span {
+								position: relative;
+								padding-left: 30px;
+								
+								&:before {
+									transition: .3s all ease;
+									left: 0;
+									position: absolute;
+									top: 50%;
+									transform: translateY(-50%);
+									content: "";
+									background: $background-light;
+									height: 20px;
+									width: 20px;
+									border-radius: 100%;
+								}
+								
+								&:after {
+									transition: .3s all ease;
+									left: 6px;
+									position: absolute;
+									top: 50%;
+									transform: translateY(-50%);
+									content: "";
+									background: transparent;
+									height: 8px;
+									width: 8px;
+									border-radius: 100%;
+								}
+							}
+							
+							input[type='radio'] {
+								display: none;
+								opacity: 0;
+								visibility: visible;
+								
+								&:checked {
+									~ label {
+										span {
+											&:before {
+												background: #0d47a1 !important;
+											}
+											
+											&:after {
+												background: #fff;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-openTill {
+			.modal-body {
+				padding: 3%;
+				
+				.openTill-content {
+					.openTill-header {
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						
+						label {
+							font-weight: bold;
+							font-size: 130%;
+							padding-right: 2%;
+							margin-bottom: 0;
+							color: $red-hover;
+						}
+						
+						input {
+							height: 50px;
+							line-height: 50px;
+							box-shadow: none !important;
+							outline: none !important;
+							border: 1px solid #d1d1d1;
+							width: 200px;
+							font-size: 130%;
+							padding-left: 1%;
+							transition: .3s all ease;
+							
+							&:focus,
+							&:hover,
+							&:visited {
+								border-color: $main-color;
+							}
+						}
+					}
+					
+					.openTill-body {
+						position: relative;
+						
+						.button-item {
+							margin: 3% auto;
+							max-width: 60%;
+						}
+					}
+					
+					.openTill-footer {
+						position: relative;
+						
+						.openTill-flex {
+							display: flex;
+							align-items: flex-end;
+							justify-content: space-between;
+							max-width: 60%;
+							margin: 0 auto;
+							
+							.openTill-f-left {
+								padding-right: 7.5px;
+								width: calc(50%);
+								display: flex;
+								align-items: flex-start;
+								justify-content: space-between;
+								
+								.openTill-item {
+									width: calc(50%);
+									
+									&:first-of-type {
+										padding-right: 15px;
+									}
+									
+									&:last-of-type {
+										border-left: 1px solid #d1d1d1;
+										padding-left: 15px;
+									}
+									
+									.openTill-item-Title {
+										margin-bottom: 10%;
+										font-weight: bold;
+										font-size: 110%;
+										color: $black-color;
+										text-align: center;
+									}
+									
+									.openTill-item-list {
+										.openTill-group {
+											display: flex;
+											align-items: center;
+											justify-content: space-between;
+											margin-bottom: 5%;
+											
+											label {
+												width: calc(100% - 80px);
+												margin-bottom: 0;
+											}
+											
+											input {
+												width: 80px;
+												height: 32px;
+												line-height: 32px;
+												box-shadow: none !important;
+												outline: none !important;
+												border: 1px solid #d1d1d1;
+												font-size: 110%;
+												padding-left: 5%;
+												transition: .3s all ease;
+												
+												&:focus,
+												&:hover,
+												&:visited {
+													border-color: $main-color;
+												}
+											}
+										}
+									}
+								}
+							}
+							
+							.openTill-f-right {
+								padding-left: 7.5px;
+								width: calc(50% - 7.5px);
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-giftCard {
+			.modal-body {
+				padding: 3%;
+				
+				.giftCard-content {
+					position: relative;
+					
+					.giftCard-header {
+						position: relative;
+						max-width: 60%;
+						margin: 0 auto 3%;
+						
+						.giftCard-inner {
+							position: relative;
+						}
+					}
+					
+					.giftCard-footer {
+						padding-top: 3%;
+						border-top: 1px solid #d1d1d1;
+						max-width: 60%;
+						margin: 0 auto;
+						
+						.giftCard-form {
+							.form-left {
+								.modalForm-group {
+									border-bottom: 1px dashed #d1d1d1;
+									
+									.return-result {
+										min-width: 250px;
+										font-size: 110% !important;
+										color: $black-color;
+										height: unset;
+									}
+								}
+							}
+						}
+					}
+					
+					.giftCard-form {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						
+						.form-left {
+							width: 60%;
+							padding-right: 2%;
+							
+							.modalForm-group {
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								margin-bottom: 3%;
+								padding-bottom: 3%;
+								font-size: 105%;
+								
+								label {
+									width: calc(100% - 200px);
+									margin-bottom: 0;
+									font-weight: bold;
+									color: $dark-color;
+								}
+								
+								input {
+									min-width: 200px;
+									height: 40px;
+									line-height: 40px;
+									box-shadow: none !important;
+									outline: none !important;
+									border: 1px solid #d1d1d1;
+									font-size: 100%;
+									padding-left: 5%;
+									transition: .3s all ease;
+									
+									&:focus,
+									&:hover,
+									&:visited {
+										border-color: $main-color;
+									}
+								}
+								
+								.return-result {
+									min-width: 200px;
+									height: 40px;
+									font-size: 100%;
+									text-align: right;
+									line-height: 1.5;
+								}
+							}
+						}
+						
+						.form-right {
+							width: 40%;
+							padding-left: 2%;
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-discount {
+			.modal-body {
+				padding: 3%;
+				
+				.discount-content {
+					position: relative;
+					
+					.discount-header {
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						
+						
+						label {
+							font-weight: bold;
+							font-size: 130%;
+							padding-right: 2%;
+							margin-bottom: 0;
+							color: $red-hover;
+						}
+						
+						select {
+							height: 50px;
+							line-height: 50px;
+							box-shadow: none !important;
+							outline: none !important;
+							border: 1px solid #d1d1d1;
+							width: 300px;
+							font-size: 130%;
+							padding-left: 1%;
+							transition: .3s all ease;
+							
+							&:focus,
+							&:hover,
+							&:visited {
+								border-color: $main-color;
+							}
+						}
+					}
+					
+					.discount-body {
+						border-top: 1px solid #d1d1d1;
+						padding-top: 3%;
+						margin-top: 3%;
+						
+						.discount-flex {
+							display: flex;
+							align-items: flex-end;
+							justify-content: space-between;
+							max-width: 60%;
+							margin: 0 auto;
+							
+							.discount-left {
+								padding-right: 7.5px;
+								width: calc(60%);
+								
+								.discount-item {
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+									width: 100%;
+									
+									.discount-group {
+										display: flex;
+										align-items: center;
+										justify-content: space-between;
+										width: 100%;
+										font-size: 110%;
+										margin-bottom: 2%;
+										
+										label {
+											width: 60%;
+											font-size: 110%;
+											margin-bottom: 0;
+										}
+										
+										.button-style {
+											width: 40%;
+											display: block;
+											font-weight: 500;
+											height: unset;
+											padding: 1%;
+											font-size: 110%;
+										}
+									}
+									
+									&:last-of-type {
+										.discount-group {
+											margin-bottom: 0;
+										}
+									}
+								}
+							}
+							
+							.discount-right {
+								padding-left: 7.5px;
+								width: calc(40% - 7.5px);
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-holdList {
+			.modal-body {
+				padding: 3%;
+				
+				.holdList-content {
+					position: relative;
+					
+					.holdList-body {
+						max-width: 60%;
+						margin: 0 auto;
+						
+						.holdList-item {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							margin-bottom: 3%;
+							font-size: 110%;
+							
+							&:last-of-type {
+								margin-bottom: 0;
+							}
+							
+							.holdList-column {
+								text-align: center;
+								padding-right: 15px;
+								
+								&:last-of-type {
+									padding-right: 0;
+								}
+								
+								&.holdList-invoice {
+									width: 20%;
+									font-weight: bold;
+									text-align: left;
+								}
+								
+								&.holdList-customer {
+									width: 50%;
+								}
+								
+								&.holdList-action {
+									width: 30%;
+								}
+								
+								select {
+									height: 50px;
+									line-height: 50px;
+									box-shadow: none !important;
+									outline: none !important;
+									border: 1px solid #d1d1d1;
+									max-width: 70%;
+									margin: 0 auto;
+									width: 100%;
+									font-size: 100%;
+									padding-left: 1%;
+									transition: .3s all ease;
+									
+									&:focus,
+									&:hover,
+									&:visited {
+										border-color: $main-color;
+									}
+								}
+								
+								.button-style {
+									max-width: 70%;
+									margin: 0 auto;
+									width: 100%;
+									font-weight: 500;
+									font-size: 100%;
+									height: unset;
+									padding: 2%;
+									display: block;
+								}
+							}
+							
+							&.holdList-title {
+								.holdList-column {
+									font-weight: bold;
+									color: $black-color;
+									font-size: 110%;
+								}
+							}
+							
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-card {
+			.modal-body {
+				padding: 3%;
+				
+				.modalCard-content {
+					position: relative;
+					
+					.modalCard-body {
+						max-width: 40%;
+						margin: 0 auto;
+						position: relative;
+						
+						.modalCard-item {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							margin-bottom: 5%;
+							font-size: 110%;
+							
+							label {
+								margin-bottom: 0;
+								font-weight: bold;
+								color: $black-color;
+							}
+							
+							input {
+								height: 44px;
+								line-height: 44px;
+								box-shadow: none !important;
+								outline: none !important;
+								border: 1px solid #d1d1d1;
+								width: 280px;
+								font-size: 130%;
+								padding-left: 1%;
+								transition: .3s all ease;
+								
+								&:focus,
+								&:hover,
+								&:visited {
+									border-color: $main-color;
+								}
+							}
+						}
+					}
+					
+					.modalCard-footer {
+						margin-top: 10%;
+						
+						.button-create {
+							height: 100px;
+							width: 60%;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-check {
+			.modal-body {
+				padding: 3%;
+				
+				.modalCheck-content {
+					position: relative;
+					
+					.modalCheck-body {
+						max-width: 40%;
+						margin: 0 auto;
+						position: relative;
+						
+						.modalCheck-item {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							margin-bottom: 5%;
+							font-size: 110%;
+							
+							label {
+								margin-bottom: 0;
+								font-weight: bold;
+								color: $black-color;
+							}
+							
+							input {
+								height: 44px;
+								line-height: 44px;
+								box-shadow: none !important;
+								outline: none !important;
+								border: 1px solid #d1d1d1;
+								width: 280px;
+								font-size: 130%;
+								padding-left: 1%;
+								transition: .3s all ease;
+								
+								&:focus,
+								&:hover,
+								&:visited {
+									border-color: $main-color;
+								}
+							}
+						}
+					}
+					
+					.modalCheck-footer {
+						margin-top: 10%;
+						
+						.button-create {
+							height: 100px;
+							width: 60%;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-cash {
+			.modal-body {
+				padding: 3%;
+				
+				.modalCash-content {
+					max-width: 60%;
+					margin: 0 auto;
+					position: relative;
+					
+					.modalCash-header {
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-bottom: 5%;
+						
+						label {
+							font-weight: bold;
+							font-size: 130%;
+							padding-right: 2%;
+							margin-bottom: 0;
+							color: $red-hover;
+						}
+						
+						input {
+							height: 50px;
+							line-height: 50px;
+							box-shadow: none !important;
+							outline: none !important;
+							border: 1px solid #d1d1d1;
+							width: 200px;
+							font-size: 130%;
+							padding-left: 1%;
+							transition: .3s all ease;
+							
+							&:focus,
+							&:hover,
+							&:visited {
+								border-color: $main-color;
+							}
+						}
+					}
+					
+					.modalCash-body {
+						.modalCash-money {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							flex-wrap: wrap;
+							position: relative;
+							
+							.modalCash-item {
+								width: calc(100% / 3 - 10px);
+								margin-bottom: 15px;
+								
+								&:nth-child(3n) {
+									padding-right: 0;
+								}
+								
+								> a {
+									position: relative;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									flex-direction: column;
+									width: 100%;
+									border: 1px solid #aac0ba;
+									background: #e9f3f9;
+									padding: 5%;
+									box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+									transition: .3s all ease;
+									
+									> i {
+										font-size: 230%;
+										margin: 2% auto;
+										color: $red-hover;
+									}
+									
+									> p {
+										margin-bottom: 0;
+										font-size: 130%;
+										font-weight: bold;
+										color: $black-color;
+									}
+									
+									> span {
+										position: absolute;
+										bottom: 0;
+										right: 0;
+										min-width: 15%;
+										height: 37%;
+										border-radius: 100%;
+										background: #fff;
+										color: #121212;
+										display: flex;
+										align-items: center;
+										font-weight: bold;
+										justify-content: center;
+										border: 1px solid #999;
+										font-size: 100%;
+									}
+									
+									&:hover,
+									&:focus {
+										background: #c6efeb;
+									}
+								}
+							}
+						}
+						
+						.modalCash-count {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							margin: 4% auto;
+							
+							.modalCash-item {
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								width: 50%;
+								
+								&:first-of-type {
+									padding-right: 3%;
+								}
+								
+								&:last-of-type {
+									padding-left: 3%;
+								}
+								
+								label {
+									width: 60%;
+									font-weight: bold;
+									font-size: 110%;
+									padding-right: 4%;
+									margin-bottom: 0;
+									color: $black-color;
+								}
+								
+								input {
+									width: 40%;
+									height: 50px;
+									line-height: 50px;
+									box-shadow: none !important;
+									outline: none !important;
+									border: 1px solid #d1d1d1;
+									font-size: 130%;
+									padding-left: 2%;
+									transition: .3s all ease;
+									
+									&:focus,
+									&:hover,
+									&:visited {
+										border-color: $main-color;
+									}
+								}
+							}
+						}
+					}
+					
+					.modalCash-footer {
+						display: flex;
+						align-items: flex-end;
+						justify-content: space-between;
+						position: relative;
+						
+						.modalCash-f-left {
+							width: 40%;
+							padding: 3%;
+							border: 1px solid #d1d1d1;
+							
+							.modalCash-group {
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								font-size: 110%;
+								padding-right: 5%;
+								margin-bottom: 3%;
+								padding-bottom: 3%;
+								
+								&:last-of-type {
+									margin-bottom: 0;
+									padding-bottom: 0;
+								}
+								
+								> span {
+									width: 50%;
+									text-align: left;
+									font-weight: bold;
+									margin-bottom: 0;
+									color: $dark-color;
+									
+									i {
+										margin-right: 3%;
+									}
+								}
+								
+								.return-result {
+									width: 50%;
+									text-align: right;
+									margin-bottom: 0;
+									color: $dark-color;
+									font-size: 110%;
+									
+									> span {
+										margin-right: 5%;
+										font-size: 90%;
+										color: $gray-color;
+									}
+								}
+							}
+						}
+						
+						.modalCash-f-right {
+							width: 60%;
+							padding-left: 5%;
+						}
+					}
+				}
+			}
+		}
+		
+		&.modal-giftCard-right {
+			.modal-body {
+				padding: 3%;
+				
+				.modalgiftCard-right-content {
+					max-width: 40%;
+					margin: 0 auto;
+					position: relative;
+					
+					.modalgiftCard-right-header {
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-bottom: 5%;
+						
+						label {
+							font-weight: bold;
+							font-size: 130%;
+							padding-right: 2%;
+							margin-bottom: 0;
+							color: $red-hover;
+						}
+						
+						input {
+							height: 50px;
+							line-height: 50px;
+							box-shadow: none !important;
+							outline: none !important;
+							border: 1px solid #d1d1d1;
+							width: 200px;
+							font-size: 130%;
+							padding-left: 1%;
+							transition: .3s all ease;
+							
+							&:focus,
+							&:hover,
+							&:visited {
+								border-color: $main-color;
+							}
+						}
+					}
+					
+					.modalgiftCard-right-body {
+						.modalgiftCard-right-scan {
+							.modalgiftCard-right-scan-item {
+								.scan-header {
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+									position: relative;
+									margin-bottom: 5%;
+									
+									.scan-title {
+										width: 50%;
+										font-weight: bold;
+										font-size: 110%;
+										padding-right: 2%;
+										margin-bottom: 0;
+										color: $black-color;
+									}
+									
+									.button-scan-add {
+										width: 50%;
+										max-width: 40%;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										font-size: 100%;
+										padding: 2% 0;
+										border: 0;
+										background: $add-color;
+										border-color: $add-hover;
+										color: $white-color;
+										transition: .3s all ease;
+										
+										&:hover,
+										&:focus {
+											background: $add-hover;
+										}
+									}
+								}
+								
+								.scan-qr {
+									padding: 3%;
+									border: 1px solid #d1d1d1;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									flex-direction: column;
+									margin-bottom: 5%;
+									
+									.scan-image {
+										width: 100%;
+										margin: 0 auto 5%;
+										padding: 1%;
+										border: 1px solid #d1d1d1;
+										
+										img {
+											width: 100%;
+										}
+									}
+									
+									.scan-content {
+										display: flex;
+										align-items: flex-end;
+										justify-content: space-between;
+										width: 100%;
+										
+										.scan-price {
+											width: 60%;
+											
+											.scan-price-item {
+												display: flex;
+												align-items: center;
+												justify-content: flex-start;
+												width: 100%;
+												margin-bottom: 3%;
+												
+												label {
+													width: 60%;
+													font-weight: bold;
+													font-size: 110%;
+													padding-right: 2%;
+													margin-bottom: 0;
+													color: $black-color;
+												}
+												
+												div {
+													width: 40%;
+													border: 1px solid #d1d1d1;
+													font-size: 110%;
+													padding: 3% 0;
+													text-align: center;
+												}
+												
+												&:last-of-type {
+													margin-bottom: 0;
+												}
+											}
+										}
+										
+										.scan-remove {
+											width: 40%;
+											display: flex;
+											align-items: center;
+											justify-content: flex-end;
+											.button-scan-remove {
+												width: 100%;
+												max-width: 80%;
+												display: flex;
+												align-items: center;
+												justify-content: center;
+												font-size: 95%;
+												border: 0;
+												padding: 3% 0;
+												background: $red-color;
+												border-color: $red-hover;
+												color: $white-color;
+												transition: .3s all ease;
+												
+												i {
+													margin-right: 5%;
+												}
+												
+												&:hover,
+												&:focus {
+													background: $red-hover;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						
+						.modalgiftCard-right-count {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							flex-wrap: wrap;
+							margin: 4% auto;
+							
+							.modalgiftCard-right-item {
+								display: flex;
+								align-items: center;
+								justify-content: flex-start;
+								width: 100%;
+								margin-bottom: 3%;
+								
+								label {
+									width: 40%;
+									font-weight: bold;
+									font-size: 110%;
+									padding-right: 4%;
+									margin-bottom: 0;
+									color: $black-color;
+								}
+								
+								input {
+									width: 60%;
+									height: 50px;
+									line-height: 50px;
+									box-shadow: none !important;
+									outline: none !important;
+									border: 1px solid #d1d1d1;
+									font-size: 130%;
+									padding-left: 2%;
+									transition: .3s all ease;
+									max-width: 200px;
+									
+									&:focus,
+									&:hover,
+									&:visited {
+										border-color: $main-color;
+									}
+								}
+							}
+						}
+					}
+					
+					.modalCash-footer {
+						display: flex;
+						align-items: flex-end;
+						justify-content: space-between;
+						position: relative;
+						
+						.modalCash-f-left {
+							width: 40%;
+							padding: 3%;
+							border: 1px solid #d1d1d1;
+							
+							.modalCash-group {
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								font-size: 110%;
+								padding-right: 5%;
+								margin-bottom: 3%;
+								padding-bottom: 3%;
+								
+								&:last-of-type {
+									margin-bottom: 0;
+									padding-bottom: 0;
+								}
+								
+								> span {
+									width: 50%;
+									text-align: left;
+									font-weight: bold;
+									margin-bottom: 0;
+									color: $dark-color;
+									
+									i {
+										margin-right: 3%;
+									}
+								}
+								
+								.return-result {
+									width: 50%;
+									text-align: right;
+									margin-bottom: 0;
+									color: $dark-color;
+									font-size: 110%;
+									
+									> span {
+										margin-right: 5%;
+										font-size: 90%;
+										color: $gray-color;
+									}
+								}
+							}
+						}
+						
+						.modalCash-f-right {
+							width: 60%;
+							padding-left: 5%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

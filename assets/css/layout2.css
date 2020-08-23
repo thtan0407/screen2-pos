@@ -1,0 +1,102 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  background: #fff;
+}
+
+a {
+  text-decoration: none !important;
+  transition: 0.3s all ease;
+}
+
+.background-light {
+  background-color: #e8f3ff !important;
+}
+
+.button-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-style {
+  width: calc(100%/3 - 15px);
+  margin-right: 15px;
+  height: 70px;
+  border-radius: 0;
+  outline: none !important;
+  transition: 0.3s all ease;
+  font-size: 120%;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid;
+}
+.button-style:last-of-type {
+  margin-right: 0;
+}
+.button-style.button-add {
+  background: #ffaa00;
+  color: #fff;
+  border-color: #e2aa07;
+}
+.button-style.button-add:hover, .button-style.button-add:focus {
+  background: #e2aa07;
+}
+.button-style.button-change {
+  background: #8BC34A;
+  color: #fff;
+  border-color: #79aa40;
+}
+.button-style.button-change:hover, .button-style.button-change:focus {
+  background: #79aa40;
+}
+.button-style.button-drop {
+  background: #4b616c;
+  color: #fff;
+  border-color: #36474f;
+}
+.button-style.button-drop:hover, .button-style.button-drop:focus {
+  background: #36474f;
+}
+.button-style.button-create {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  padding: 0 3%;
+  background: #F44336;
+  border-color: #c7372c;
+  color: #fff;
+}
+.button-style.button-create:hover, .button-style.button-create:focus {
+  background: #c7372c;
+}
+.button-style.button-print {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  padding: 0 3%;
+  background: #007ACE;
+  border-color: #005c9c;
+  color: #fff;
+}
+.button-style.button-print:hover, .button-style.button-print:focus {
+  background: #005c9c;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  background: url(../icon/icon-select.png) no-repeat right 10px center;
+}
+
+/*# sourceMappingURL=layout2.css.map */
