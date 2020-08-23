@@ -43,6 +43,9 @@
       <recent name="E:\_Shortcut\anhnam-freelance\screen-pos\assets\css" />
     </key>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -61,7 +64,7 @@
       <workItem from="1598058385976" duration="250000" />
       <workItem from="1598077700369" duration="3106000" />
       <workItem from="1598097085843" duration="15352000" />
-      <workItem from="1598149761219" duration="17926000" />
+      <workItem from="1598149761219" duration="25914000" />
     </task>
     <servers />
   </component>
@@ -69,6 +72,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598185424596">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="452" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1598185424596" />
     <state x="437" y="1" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597927728450">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -77,28 +84,28 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="304" y="142" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1597927288625" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1598176593434">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1598186664756">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1597972307085" />
     <state x="1827" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1598058635169" />
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598176593434" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598186664756" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1597927290404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597927290404" />
-    <state x="299" y="65" width="767" height="598" key="find.popup" timestamp="1598170093913">
+    <state x="299" y="65" width="767" height="598" key="find.popup" timestamp="1598184709005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1664" y="65" width="763" height="598" key="find.popup/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1598000399118" />
-    <state x="299" y="65" width="767" height="598" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598170093913" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1598020282300">
+    <state x="299" y="65" width="767" height="598" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598184709005" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1598186588620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1598020282300" />
-    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1598157551198">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1598186588620" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1598185403193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1598157551198" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1598185403193" />
   </component>
 </project>

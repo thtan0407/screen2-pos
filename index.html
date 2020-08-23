@@ -243,7 +243,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="screen-service d-none">
+                        <div class="screen-service">
                             <div class="service-ticket ticket-title overflow-hidden position-relative">
                                 <div class="col-ticket col-id font-weight-bold">
                                     Ticket#
@@ -439,7 +439,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="screen-service  d-none">
+                        <div class="screen-service">
                             <div class="service-ticket ticket-title overflow-hidden position-relative">
                                 <div class="col-ticket col-id font-weight-bold">
                                     Ticket#
@@ -929,11 +929,71 @@
 
 <script>
     $(document).ready(function () {
-        if ($('.screen-overflow').outerHeight() > 500) {
-            $('.screen-overflow').css({"overflow-y": "scroll", "max-height": "500px"});
+        var windowWidth = $(window).width();
+        heightScreen = 500;
+
+        if (windowWidth >= 1367 && windowWidth < 1518) {
+            heightScreen = 500 * 1.15;
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if (windowWidth >= 1518 && windowWidth < 1708) {
+            heightScreen = 500 * 1.25;
+            console.log(heightScreen);
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if (windowWidth >= 1708 && windowWidth < 1822) {
+            heightScreen = 500 * 1.33;
+            console.log(heightScreen);
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if (windowWidth >= 1822 && windowWidth < 2050) {
+            heightScreen = 500 * 1.5;
+            console.log(heightScreen);
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if (windowWidth >= 2050 && windowWidth < 2733) {
+            heightScreen = 500 * 2;
+            console.log(heightScreen);
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if (windowWidth >= 2733 && windowWidth < 4100) {
+            heightScreen = 500 * 3;
+            console.log(heightScreen);
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if (windowWidth >= 4100) {
+            heightScreen = 500 * 4.1;
+            console.log(heightScreen);
+            if ($('.screen-overflow').outerHeight() > heightScreen) {
+                $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
+            }
+        }
+
+        if ($('.screen-overflow').outerHeight() > heightScreen) {
+            $('.screen-overflow').css({"overflow-y": "scroll", "max-height": heightScreen});
         }
     });
 </script>
+
+
 <!-- Modal Khách hàng -->
 <div class="modal modal-pos modal-customer fade" data-backdrop="false" id="modalCustomer" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-xxl" role="document">
@@ -1655,15 +1715,16 @@
                                         <div class="scan-price">
                                             <div class="scan-price-item">
                                                 <label for="id09">Giftcard current amount: </label>
-                                                <div>$ 150.00 </div>
+                                                <div>$ 150.00</div>
                                             </div>
                                             <div class="scan-price-item">
                                                 <label for="id10">Amount left: </label>
-                                                <div>$ 150.00 </div>
+                                                <div>$ 150.00</div>
                                             </div>
                                         </div>
                                         <div class="scan-remove">
-                                            <button class="button-scan-remove"><i class="fa fa-trash"></i>Remove Gift</button>
+                                            <button class="button-scan-remove"><i class="fa fa-trash"></i>Remove Gift
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

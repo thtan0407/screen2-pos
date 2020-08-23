@@ -15,7 +15,7 @@ $main-hover: #860c61;
 $header-color: #500037;
 $blue-color: #007ACE;
 $blue-hover: #005c9c;
-$background-light: #e8f3ff!important;
+$background-light: #e8f3ff !important;
 $active-button: #63ab0f;
 $active-button-hover: #528e0c;
 body {
@@ -30,6 +30,7 @@ a {
 	text-decoration: none !important;
 	transition: .3s all ease;
 }
+
 .background-light {
 	background-color: $background-light;
 }
@@ -39,8 +40,9 @@ a {
 	align-items: center;
 	justify-content: space-between;
 }
-.button-style  {
-	width: calc(100%/3 - 15px);
+
+.button-style {
+	width: calc(100% / 3 - 15px);
 	margin-right: 15px;
 	height: 70px;
 	border-radius: 0;
@@ -59,6 +61,7 @@ a {
 		background: $add-color;
 		color: $white-color;
 		border-color: $add-hover;
+		
 		&:hover,
 		&:focus {
 			background: $add-hover;
@@ -69,6 +72,7 @@ a {
 		background: $success-color;
 		color: $white-color;
 		border-color: $success-hover;
+		
 		&:hover,
 		&:focus {
 			background: $success-hover;
@@ -79,6 +83,7 @@ a {
 		background: $process-color;
 		color: $white-color;
 		border-color: $process-hover;
+		
 		&:hover,
 		&:focus {
 			background: $process-hover;
@@ -96,6 +101,7 @@ a {
 		background: $red-color;
 		border-color: $red-hover;
 		color: $white-color;
+		
 		&:hover,
 		&:focus {
 			background: $red-hover;
@@ -113,6 +119,7 @@ a {
 		background: $blue-color;
 		border-color: $blue-hover;
 		color: $white-color;
+		
 		&:hover,
 		&:focus {
 			background: $blue-hover;
@@ -128,3 +135,97 @@ select {
 	-o-appearance: none;
 	background: url(../icon/icon-select.png) no-repeat right 10px center;
 }
+
+//@media screen and (min-width: 1518px) {
+//	.button-style {
+//		width: calc(100% / 3 - 15px * 1.275);
+//		margin-right: calc(15px * 1.275);
+//		font-size: calc(120% * 1.275);
+//
+//		&:last-of-type {
+//			margin-right: 0;
+//		}
+//
+//		&.button-create,
+//		&.button-print {
+//			width: 100%;
+//			font-size: calc(150% * 1.275);
+//			padding: 0 calc(3% * 1.275);
+//		}
+//	}
+//}
+//
+//@media screen and (min-width: 1708px) {
+//	.button-style {
+//		width: calc(100% / 3 - 15px * 1.36);
+//		margin-right: calc(15px * 1.36);
+//		font-size: calc(120% * 1.36);
+//
+//		&.button-create,
+//		&.button-print {
+//			width: 100%;
+//			font-size: calc(150% * 1.36);
+//			padding: 0 calc(3% * 1.36);
+//		}
+//	}
+//}
+//
+//@media screen and (min-width: 1822px) {
+//	.button-style {
+//		width: calc(100% / 3 - 15px * 1.53);
+//		margin-right: calc(15px * 1.53);
+//		font-size: calc(120% * 1.53);
+//
+//		&.button-create,
+//		&.button-print {
+//			width: 100%;
+//			font-size: calc(150% * 1.53);
+//			padding: 0 calc(3% * 1.53);
+//		}
+//	}
+//}
+
+//@media screen and (min-width: 2050px) {
+//	.button-style {
+//		width: calc(100% / 3 - 15px * 2.03);
+//		margin-right: calc(15px * 2.03);
+//		font-size: 120%;
+//
+//		&.button-create,
+//		&.button-print {
+//			width: 100%;
+//			font-size: 150%;
+//			padding: 0 calc(3% * 2.03);
+//		}
+//	}
+//}
+//
+//@media screen and (min-width: 2733px) {
+//	.button-style {
+//		width: calc(100% / 3 - 15px * 3.05);
+//		margin-right: calc(15px * 3.05);
+//		font-size:120%;
+//
+//		&.button-create,
+//		&.button-print {
+//			width: 100%;
+//			font-size: 150%;
+//			padding: 0 calc(3% * 3.05);
+//		}
+//	}
+//}
+//
+//@media screen and (min-width: 4100px) {
+//	.button-style {
+//		width: calc(100% / 3 - 15px * 3.8);
+//		margin-right: calc(15px * 3.8);
+//		font-size: 120%;
+//
+//		&.button-create,
+//		&.button-print {
+//			width: 100%;
+//			font-size: 150%;
+//			padding: 0 calc(3% * 3.8);
+//		}
+//	}
+//}
